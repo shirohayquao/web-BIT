@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Lạc Bộ BIT - Nơi kết nối tài năng công nghệ</title>
+    <meta name="description" content="BIT Club - Cộng đồng đam mê công nghệ, sáng tạo và đổi mới. Nơi kết nối những tài năng trẻ trong lĩnh vực công nghệ thông tin.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background vũ trụ -->
+    <div class="space-background" id="spaceBackground">
+        <!-- Tinh vân -->
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <header>
+            <h1>BIT CLUB</h1>
+            <p class="tagline">Nơi kết nối những tài năng công nghệ và đam mê sáng tạo</p>
+            <p class="slogan">ĐƠN GIẢN TẠO KHÁC BIỆT</p>
+        </header>
+        
+        <!-- Menu lựa chọn -->
+        <div class="menu">
+            <button class="menu-btn active" data-section="about">Giới thiệu</button>
+            <button class="menu-btn" data-section="register">Đăng ký</button>
+            <button class="menu-btn" data-section="events">Sự kiện</button>
+            <button class="menu-btn" data-section="activities">Hoạt động</button>
+            <button class="menu-btn" data-section="highlights">Nổi bật</button>
+        </div>
+        
+        <!-- Nội dung các phần -->
+        <div id="about" class="content-section active">
+            <h2>GIỚI THIỆU VỀ BIT CLUB</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Chúng tôi là ai?</h3>
+                    <p>Câu lạc bộ BIT là cộng đồng những người đam mê công nghệ, sáng tạo và đổi mới. Chúng tôi tập hợp những tài năng trẻ để cùng nhau học hỏi, phát triển và tạo ra những sản phẩm có giá trị cho cộng đồng.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Sứ mệnh</h3>
+                    <p>Mang đến môi trường học tập, nghiên cứu và phát triển kỹ năng công nghệ cho các thành viên, đồng thời tạo ra các sản phẩm hữu ích cho cộng đồng sinh viên và xã hội.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Giá trị cốt lõi</h3>
+                    <ul>
+                        <li><strong>Sáng tạo không ngừng</strong> - Luôn tìm tòi và đổi mới</li>
+                        <li><strong>Học hỏi suốt đời</strong> - Chia sẻ kiến thức không ngừng</li>
+                        <li><strong>Hợp tác cùng phát triển</strong> - Teamwork làm nên sức mạnh</li>
+                        <li><strong>Đóng góp cho cộng đồng</strong> - Tạo giá trị thực tế</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3>Thành tựu</h3>
+                    <p>Với hơn 30 thành viên tích cực, BIT Club đã tổ chức thành công nhiều sự kiện, workshop và triển khai các dự án công nghệ có ích cho sinh viên.</p>
+                    <p>Nhiều thành viên của CLB đã đạt giải cao trong các cuộc thi công nghệ trong và ngoài trường.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="register" class="content-section">
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@btec.fpi.vn" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" placeholder="0987 654 321" required>
+                </div>
+                <div class="form-group">
+                    <label for="major">Chuyên ngành quan tâm</label>
+                    <select id="major" required>
+                        <option value="">-- Chọn ban --</option>
+                        <option value="create">Nghiên cứu và phát triển</option>
+                        <option value="hooman">Nhân sự</option>
+                        <option value="marketing">Truyền thông và thương hiệu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Lý do tham gia</label>
+                    <textarea id="message" rows="4" placeholder="Tôi muốn tham gia BIT Club vì..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Gửi đăng ký</button>
+            </form>
+        </div>
+        
+        <div id="events" class="content-section">
+            <h2>SỰ KIỆN SẮP DIỄN RA</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Hackathon BIT 2023</h3>
+                    <p class="date">15/11/2023 - 17/11/2023</p>
+                    <p>Cuộc thi lập trình 48h với chủ đề "Giải pháp công nghệ cho giáo dục". Cơ hội nhận giải thưởng lên đến 20 triệu đồng và thực tập tại các công ty đối tác.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Workshop: AI cơ bản</h3>
+                    <p class="date">25/10/2023 | 18:00 - 20:30</p>
+                    <p>Giới thiệu về trí tuệ nhân tạo và các ứng dụng thực tế. Hướng dẫn thực hành với Python cơ bản. Phù hợp cho người mới bắt đầu.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Chuyên gia chia sẻ</h3>
+                    <p class="date">05/11/2023 | 14:00 - 16:30</p>
+                    <p>Buổi gặp gỡ với thầy Linh - Giám đốc công nghệ tại FPT Software. Chia sẻ về xu hướng công nghệ và kỹ năng cần thiết cho sinh viên IT.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Ngày hội tuyển dụng</h3>
+                    <p class="date">20/12/2023 | 8:00 - 17:00</p>
+                    <p>Cơ hội gặp gỡ trực tiếp với hơn 20 doanh nghiệp công nghệ hàng đầu. Chuẩn bị CV và kỹ năng phỏng vấn để có công việc mơ ước.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="activities" class="content-section">
+            <h2>HOẠT ĐỘNG THƯỜNG KỲ</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Code Together</h3>
+                    <p class="date">Mỗi thứ 4 hàng tuần | 18:00 - 20:30</p>
+                    <p>Phiên lập trình nhóm, cùng nhau giải quyết các bài toán thực tế và xây dựng dự án cá nhân với sự hỗ trợ của mentor.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Tech Talk</h3>
+                    <p class="date">Mỗi thứ 2 hàng tuần | 19:00 - 20:30</p>
+                    <p>Chia sẻ kiến thức công nghệ mới, kinh nghiệm thực tế từ các anh chị khóa trên và chuyên gia trong ngành.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Dự án cộng đồng</h3>
+                    <p class="date">Cuối tuần thứ 2 hàng tháng</p>
+                    <p>Xây dựng các sản phẩm công nghệ phục vụ cộng đồng sinh viên NEU như hệ thống quản lý thư viện, app hỗ trợ học tập...</p>
+                </div>
+                <div class="content-card">
+                    <h3>Đào tạo nội bộ</h3>
+                    <p class="date">Linh hoạt theo nhu cầu</p>
+                    <p>Các khóa học ngắn hạn về kỹ năng lập trình, thiết kế, quản lý dự án do các mentor trong CLB tổ chức. Cam kết chất lượng đào tạo.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="highlights" class="content-section">
+            <h2>THÀNH TỰU NỔI BẬT</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Dự án ???</h3>
+                    <p>Ứng dụng kết nối sinh viên trao đổi sách và kết nối cộng đồng. Đã có hơn 5,000 lượt tải từ sinh viên.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Thành viên tiêu biểu</h3>
+                    <p>Lương Hải Đăng - Quán quân "Nhánh 1" UEB Business Challenges mùa 7 .</p>
+                    <p>???.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Hợp tác doanh nghiệp</h3>
+                    <p>BIT Club đã thiết lập quan hệ hợp tác .</p>
+                </div>
+                <div class="content-card">
+                    <h3>Sự kiện BIT Day</h3>
+                    <p>?????.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 BIT Club - Btec PFT</p>
+            <p>13 Trinh Van Bo, Phuong Canh, Nam Tu Liem, Hanoi, Vietnam</p>
+            <div class="social-links">
+                <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
